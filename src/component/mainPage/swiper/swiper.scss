@@ -1,0 +1,18 @@
+@import '../../../variablesStyle/variables.scss';
+.wrapper__swiper{
+    padding-top: 202px;
+    background-color:$black;
+    color: $white;
+    .wrapper__img {
+        margin: 10px;
+        img {
+            border-radius: 6px;
+        }
+    }
+    .control-arrow.control-prev{
+        z-index: 1;
+    }
+    .control-arrow.control-next{
+        z-index: 1;
+    }
+}

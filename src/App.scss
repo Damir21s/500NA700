@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    font-family: 'Mplus 1p';
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 320px;
+}
+
+@media(max-width: 1200px) {
+    .App {
+        header {
+            max-width: 995px;
+        }
+    }
+
+    .container {
+        max-width: 995px;
+    }
+}
+
+@media(max-width: 992px) {
+    .App {
+        header {
+            min-width: 770px;
+            .wrapper__header {
+                ul {
+                    margin-left: 130px;
+        
+                }
+            }
+        }
+    }
+    .container {
+        min-width: 770px;
+
+        .wrapper__subscription_inputs {
+            display: block;
+        }
+
+        .footer__container {
+            display: block;
+
+            h1 {
+                padding-top: 20px;
+            }
+
+            .footer__items {
+                width: 87%;
+                margin: 0 auto;
+            }
+
+            .footer__icons {
+                padding-top: 20px;
+                margin: 0 auto;
+                width: 202px;
+            }
+        }
+
+        .wrapper__subscription_subscription {
+            height: 570px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .App {
+        header {
+            min-width: 320px;
+            padding-top: 35px;
+
+            .wrapper__header {
+                justify-content: space-between;
+
+                ul {
+                    display: none;
+                }
+
+                .wrapper_logo {
+                    padding-left: 20px;
+                }
+
+                .wrapper_burgermenu {
+                    display: block;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .container {
+        min-width: 320px;
+        .container__news {
+            h1 {
+                font-weight: 500;
+                font-size: 40px;
+            }
+        }
+        .wrapper__subscription_subscription {
+            .wrapper__subscription {
+                h1 {
+                    font-weight: 500;
+                    font-size: 40px;
+                }
+
+                p {
+                    width: 87%;
+                    margin-top: 0px;
+
+                }
+
+                .wrapper__subscription_form {
+                    width: 320px;
+
+                    .wrapper__subscription_input {
+                        width: 86%;
+
+                        input {
+                            width: 80%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .wrapper__faq_block {
+            .wrapper__faq {
+                width: 86%;
+                padding-top: 80px;
+                display: block;
+
+                h1 {
+                    font-size: 40px;
+                    padding-bottom: 20px;
+                }
+
+                .wrapper__faq_descrip {
+                    margin-left: 0px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .wrapper__swiper {
+           width: 100%;
+            padding-top: 120px;
+
+            .wrapper__img {
+                margin: 10px;
+
+            }
+            .control-arrow.control-next{
+                display: none;
+            }
+            .control-arrow.control-prev{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 1439px) {
+    .container {
+        .container__news {
+            .wrapper__news {
+                display: flex;
+                justify-content: space-around;
+                .wrapper__news_items {
+                    display: block;
+
+                    .wrapper__news_item {
+                        width: 400px;
+
+                        p {
+                            padding-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 992px) {
+    .container {
+        .container__news {
+            .wrapper__news {
+                display: block;
+            }
+        }
+    }
+}

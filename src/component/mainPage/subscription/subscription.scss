@@ -1,0 +1,83 @@
+@import '../../../variablesStyle/variables.scss';
+
+.wrapper__subscription_subscription{
+    background-color: white;
+    height: 430px;
+    .wrapper__subscription{
+    width: 86%;
+    color:$black;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        padding-top: 30px;
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 85px;
+    }
+    p{
+        margin: 30px 0px 15px 0px;
+        width: 390px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .wrapper__subscription_form{
+        width: 840px;
+        
+        .wrapper__subscription_input{
+            position: relative;
+            width: 400px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.4) ;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            input{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                margin:14px 0px 0px 20px;
+                width: 360px;
+                outline: none;
+                border: none;
+            }
+            &:focus-within{
+                border: 1px solid black;
+            }
+        }
+        .wrapper__subscription_error{
+            position: absolute;
+            margin:-20px 0px 0px 10px ;
+            color: rgb(208, 0, 0);
+        }
+        .wrapper__subscription_button{
+            width: 141px;
+            height: 50px;
+            //margin-bottom:36px;
+            border: 1px solid rgba(0, 0, 0, 0.4) ;
+            border-radius: 10px;
+            text-align: center;
+            &:hover{
+                background-color: $green;
+                border: none;
+                width: 143px;
+                height: 52px;
+                padding-top: 1px;
+                margin-bottom: 35px;
+            }
+            .subscription_button{
+                margin-top: 14px;
+                border: 0;
+                background: transparent;
+                font-weight: 400;
+                font-size: 16px;
+
+             
+            }
+        }
+    }
+}
+}
+.wrapper__subscription_inputs{
+    display: flex;
+    justify-content: space-between;
+}

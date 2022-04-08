@@ -1,0 +1,99 @@
+@import '../../variablesStyle/variables.scss';
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    position: fixed;
+    background-color: $black;
+    z-index: 2;
+    color: $white;
+    padding-top: 70px;
+
+    .wrapper__header {
+        display: flex;
+        align-items: center;
+
+        .wrapper_logo {
+            padding-left: 100px;
+        }
+
+        ul {
+            width: 440px;
+            height: 64px;
+            margin-left: 212.5px;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            font-weight: 500;
+            font-size: 16px;
+
+            li {
+                margin-top: 20px;
+
+                &:hover {
+                    color: $green;
+                    cursor: pointer;
+                }
+            }
+
+            .select__item_line {
+                padding-top: 22.5px;
+                border-bottom: 3px solid $white;
+            }
+        }
+
+        .wrapper_burgermenu {
+            display: none;
+        }
+    }
+
+    .wrapper__subheader {
+        background-color: $black;
+        height: 288px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+
+        .wrapper__subheader_items--right {
+            margin: 75px 0px 0px 352px;
+        }
+
+        .wrapper__subheader_items--left {
+            margin: 75px 0px 0px 142px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 30px;
+        }
+    }
+    .container__subburger{
+        float: right;
+        position: relative;
+        width: 250px;
+        font-size: 18px;
+        .wrapper__subburger{
+            background-color: $black;
+            position: absolute;
+            width: 100%;
+            ul{
+                padding-top: 20px;
+                list-style-type: none;
+                li{
+                    margin-bottom: 35px;
+                }
+                margin-bottom: 300px;
+                .wrapper__subburger_item_subitem{
+                    margin-left: 30px;
+                    p{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

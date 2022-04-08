@@ -1,0 +1,40 @@
+@import '../../../variablesStyle/variables.scss';
+.wrapper__faq_block{
+    background-color:$black;
+    .wrapper__faq{
+        width: 86%;
+        padding-top: 150px;
+        color:$white;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        h1{
+            font-weight: 500;
+            font-size: 80px;
+        }
+        .wrapper__faq_descrip{
+            margin-left: 98px;
+            width: 988px;
+            .line{
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            .line--first{
+                border-top: 1px solid $white;
+            }
+            .wrapper__faq_descrip_item{
+                margin:30px 0px 30px 0px;
+                h2{
+                    font-weight: 400;
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+                p{
+                    margin-top: 30px;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
